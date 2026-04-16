@@ -1,11 +1,17 @@
-# OpenDev SDK — Desktop（JAR 分发）
+# OpenDev SDK — Desktop (prebuilt JAR)
 
-本仓库为 **预构建 JVM JAR**（`:core` `jvm("desktop")` 产出），供未发布 Maven Central 时直接依赖。
+**Language:** English (default) · [简体中文](README.zh-CN.md)
 
-## 产物
+This repository contains a **prebuilt JVM JAR** for the **OpenDev SDK** (`jvm("desktop")` target). Use it for GitHub-based consumption before **Maven Central** publishing.
+
+> **Brand:** Public name **OpenDev SDK**. References to **Walknote** are examples only.
+
+## Contents
 
 - `opendev-sdk.jar`
-- `opendev-sdk-sources.jar`（可选，IDE 源码）
+- `CHECKSUMS.sha256`
+- `sbom/` — resolved **Desktop runtime** Maven coordinates
+- `opendev-sdk-sources.jar` — present only if published with `WALKNOTE_OPENDEV_DIST_INCLUDE_SOURCES=1` (omitted by default for public binary repos)
 
 ## Gradle
 
@@ -15,4 +21,17 @@ dependencies {
 }
 ```
 
-Maven 坐标（`io.github.zinben-opendev:opendev-desktop-sdk`）见主仓文档，待 Central 发布后切换。
+For Maven coordinates (`io.github.zinben-opendev:opendev-desktop-sdk`), follow the OpenDev publishing guide when Central is enabled.
+
+## Integration notes
+
+- Initialize the SDK with your CDN / channel / environment configuration.
+- Desktop builds often bundle logging; keep secrets out of VCS.
+
+## Process
+
+See **`Docs/01-SDK/SDK_GITHUB_BINARIES_DISTRIBUTION.md`** in the Walknote monorepo (maintainer-facing).
+
+## License
+
+See [LICENSE](LICENSE).
