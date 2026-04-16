@@ -40,6 +40,14 @@ For Maven coordinates (`io.github.zinben-opendev:opendev-desktop-sdk`), follow t
 
 See **`Docs/01-SDK/SDK_GITHUB_BINARIES_DISTRIBUTION.md`** in the Walknote monorepo (maintainer-facing).
 
+## Security
+
+See [SECURITY.md](SECURITY.md).
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## License
 
 See [LICENSE](LICENSE).

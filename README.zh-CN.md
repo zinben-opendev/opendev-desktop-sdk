@@ -40,6 +40,14 @@ Maven 坐标见 OpenDev 发布文档（Central 就绪后）。
 
 维护者说明见 Walknote 主仓 **`Docs/01-SDK/SDK_GITHUB_BINARIES_DISTRIBUTION.md`**。
 
+## 安全
+
+见 [SECURITY.md](SECURITY.md)。
+
+## 贡献
+
+见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
 ## 许可证
 
 见 [LICENSE](LICENSE)。
