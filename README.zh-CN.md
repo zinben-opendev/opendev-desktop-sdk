@@ -1,10 +1,18 @@
 # OpenDev SDK — Desktop（预构建 JAR）
 
-**语言说明：** 默认以英文 [`README.md`](README.md) 为准；本页为简体中文补充。
+**文档语言：** 默认以英文 [`README.md`](README.md) 为准；本页为简体中文补充。
 
 本仓库提供 **OpenDev SDK**（`jvm("desktop")`）的 **预构建 JVM JAR**，用于在 **Maven Central** 未发布时通过 **GitHub** 依赖。
 
 > **品牌：** 对外产品名为 **OpenDev SDK**。**Walknote** 仅作示例。
+
+## 技术栈与语言
+
+| 方面 | 说明 |
+|------|------|
+| **SDK 源码实现**（不在本仓） | **Kotlin Multiplatform** `jvm("desktop")`，编译为 **JVM 字节码** 并打 **`opendev-sdk.jar`**。 |
+| **本仓产物** | 预编译 **JAR**（可选 **`-sources.jar`**），**无** Java/Kotlin 源码树。 |
+| **集成方应用** | **Kotlin** 或 **Java**（**JVM**，如 Compose Desktop 等），Gradle `files` 或 Maven 坐标。 |
 
 ## 产物
 
